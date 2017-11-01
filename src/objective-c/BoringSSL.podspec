@@ -61,7 +61,8 @@ Pod::Spec.new do |s|
     Currently BoringSSL is the SSL library in Chrome/Chromium, Android (but it’s not part of the
     NDK) and a number of other apps/programs.
   DESC
-  s.homepage = 'https://boringssl.googlesource.com/boringssl/'
+  # zhj tmp: s.homepage = 'https://boringssl.googlesource.com/boringssl/'
+  s.homepage = 'https://github.com/google/boringssl/'
   s.documentation_url = 'https://commondatastorage.googleapis.com/chromium-boringssl-docs/headers.html'
   s.license  = { :type => 'Mixed', :file => 'LICENSE' }
   # "The name and email addresses of the library maintainers, not the Podspec maintainer."
@@ -69,7 +70,8 @@ Pod::Spec.new do |s|
 
   major_version = version[0] + '.0'
   s.source = {
-    :git => 'https://boringssl.googlesource.com/boringssl',
+  # zhj tmp  :git => 'https://boringssl.googlesource.com/boringssl',
+    :git => 'https://github.com/google/boringssl/'
     :tag => "version_for_cocoapods_#{major_version}",
   }
 
